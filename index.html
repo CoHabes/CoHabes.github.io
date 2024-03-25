@@ -20,7 +20,7 @@ s<!doctype html>
         >
             <a-assets>
                 <a-asset-item
-                    id="animated-asset"
+                    id="asset1"
                     src="assets/asset.glb"
                 ></a-asset-item>
             </a-assets>
@@ -31,6 +31,7 @@ s<!doctype html>
                 preset="custom"
                 url="assets/marker.patt"
                 raycaster="objects: .clickable"
+                smooth="true"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
@@ -38,8 +39,7 @@ s<!doctype html>
                 <a-entity
                     id="bowser-model"
                     scale="1 1 1"
-                    animation-mixer="loop: repeat"
-                    gltf-model="#animated-asset"
+                    gltf-model="#asset1"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
